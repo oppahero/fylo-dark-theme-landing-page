@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 // import { raleway, open_Sans } from './fonts'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Home() {
   return (
@@ -12,6 +15,8 @@ export default function Home() {
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
       <main className={`${styles.main} `}>
+        {/* <FontAwesomeIcon icon={faCheck} className="fas fa-check" style={{ color: "red" }}
+        ></FontAwesomeIcon> */}
 
       </main>
     </>

@@ -1,7 +1,7 @@
 :root {
   --max-width: 1100px;
   --darkblue-signup-bg: hsl(217, 28%, 15%);
-  --darkblue-main-bg:  hsl(218, 28%, 13%);
+  --darkblue-main-bg: hsl(218, 28%, 13%);
   --darkblue-footer-bg: hsl(216, 53%, 9%);
   --darkblue-testimonial-bg: hsl(219, 30%, 18%);
   --cyan: hsl(176, 68%, 64%);
@@ -19,5 +19,40 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  background-color: var( --darkblue-signup-bg);
+  /* overflow-x: hidden; */
+  font-size: 14px;
+  color: var(--white);
+}
+
+a{
+  text-decoration: none;
+  color: var( --white);
+}
+
+ul {
+  list-style: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 47px 40px  0;
+}
+
+main{
+  /* padding: 47px 40px */
+}
+
+button{
+  width: 486px;
+  padding: 36px;
+  border: none;
+  color: var(--white);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: linear-gradient(0.25turn, var(--cyan), var(--blue));
 }

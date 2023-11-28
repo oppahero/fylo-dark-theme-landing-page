@@ -30,18 +30,14 @@ a{
   color: var( --white);
 }
 
-ul {
+li {
   list-style: none;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-  padding: 47px 40px  0;
-}
-
-main{
-  /* padding: 47px 40px */
+  padding: 47px 40px  91px;
 }
 
 button{
@@ -50,9 +46,34 @@ button{
   border: none;
   color: var(--white);
   border-radius: 50px;
+  cursor: pointer;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background: linear-gradient(0.25turn, var(--cyan), var(--blue));
+}
+
+footer{
+  position: relative;
+  background-color: var(--darkblue-footer-bg);
+}
+
+input{
+  border: none;
+  padding: 30px 52px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+a{
+  cursor: pointer;
+}
+
+button:hover{
+  filter: opacity(.5);
+  -webkit-filter: opacity(.5);
 }

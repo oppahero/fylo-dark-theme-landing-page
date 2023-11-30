@@ -28,13 +28,14 @@
 
 .button {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
+  width: 300px;
 }
 
 .h1 {
   font-weight: 700;
-  font-size: 50px;
-  line-height: 68px;
+  font-size: 35px;
+  line-height: 48px;
   margin-bottom: 50px;
 }
 
@@ -50,9 +51,7 @@
 }
 
 .imageIntro {
-  /* position: relative;
-  top: 90px; */
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   position: relative;
   z-index: 100;
 }
@@ -79,33 +78,35 @@
 }
 
 .getStartedtext {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 30px;
   padding: 0 20px;
   margin: 0 0 65px;
+
+  /* font-size: 30px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 0 0 65px; */
 }
 
 .text {
-  font-size: 25px;
-  line-height: 40px;
-  /* padding: 0 35px; */
+  font-size: 20px;
+  line-height: 35px;
+  /* font-size: 25px;
+  line-height: 40px; */
 }
 
-.advantagesContainer {
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 170px; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(457px, 1fr));
+.featuresContainer {
   max-width: 1150px;
-  padding-bottom: 290px;
   margin: 0 auto;
+  padding-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 50px;
-  /* row-gap: 77px; */
-  row-gap: 170px;
+  row-gap: 130px;
 }
 
-.advantagesContainer__item {
+.featuresContainer__item {
   /* width: 648px; */
   /* margin: 0 auto; */
   display: flex;
@@ -115,18 +116,18 @@
   text-align: center;
 }
 
-.advantagesContainer__item__text {
+.featuresContainer__item__text {
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 
 .infoContainer {
+  padding-bottom: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 95px;
-  padding: 0 70px 293px;
+  gap: 50px;
 }
 
 .infoContainer__text {
@@ -157,19 +158,19 @@
   border-bottom: 2px solid var(--white);
 }
 
-.testimonialsContainer {
-  padding-bottom: 670px;
+.teamContainer {
   max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 670px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 30px;
   row-gap: 45px;
-  margin: 0 auto;
 }
 
-.testimonialsContainer__card {
-  height: 300px;
-  padding: 56px 63px 43px 39px;
+.teamContainer__card {
+  /* height: 300px; */
+  padding: 50px 30px 43px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -178,6 +179,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
   background-color: var(--darkblue-testimonial-bg);
   box-shadow: 1px 2px 25px var(--darkblue-signup-bg);
   position: relative;
@@ -189,8 +191,8 @@
 }
 
 .testimonial {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 .testimonialImage {
@@ -240,7 +242,7 @@
 }
 
 .direction p {
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .infoLinks li {
@@ -255,7 +257,7 @@
 .socialMediaIcon {
   cursor: pointer;
   border: 1px solid var(--white);
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 10px;
   padding: 15px;
   border-radius: 50%;
@@ -281,7 +283,7 @@
   left: 0;
   max-width: 865px;
   margin: 0 auto;
-  padding: 79px 49px 69px;
+  padding: 50px 25px 69px;
   text-align: center;
   background-color: var(--darkblue-signup-bg);
   box-shadow: 2px 5px 1.5rem var(--darkblue-footer-bg);
@@ -293,8 +295,8 @@
 }
 
 .suscribeContainer p {
-  margin: 39px 0 60px;
-  font-size: 22px;
+  margin: 39px 0 50px;
+  font-size: 16px;
   line-height: 30px;
   padding: 0 20px;
 }
@@ -310,6 +312,9 @@
   font-weight: 700;
 }
 
+
+
+
 @media screen and (max-width: 350px) {
 }
 
@@ -317,6 +322,23 @@
   .navLi {
     font-size: 20px;
   }
+
+  .imageIntro {
+    width: 612px;
+    height: 455px;
+    margin-bottom: 75px;
+  }
+
+  .h1 {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 50px;
+  }
+
+  .button {
+    font-size: 25px;
+  }
+
   .suscribeContainer {
     padding: 46px 77px 40px;
     top: -12rem;
@@ -352,8 +374,24 @@
     line-height: 30px;
   }
 
-  .advantagesContainer__item__text p {
+  .featuresContainer {
+    padding-bottom: 290px;
+    grid-template-columns: repeat(auto-fit, minmax(457px, 1fr));
+    row-gap: 170px;
+  }
+
+  .featuresContainer__item__text p {
     padding: 0 25px;
+  }
+
+  .infoContainer {
+    padding: 0 70px 293px;
+    gap: 95px;
+  }
+
+  .infoContainer__image {
+    width: 620px;
+    height: 467px;
   }
 
   .accessIcon {
@@ -380,6 +418,22 @@
     width: 600px;
     margin: 0 auto 65px auto;
   }
+
+  .teamContainer {
+    padding-bottom: 367px;
+  }
+
+  .teamContainer__card {
+    padding: 56px 30px 43px 39px;
+  }
+
+  .testimonial {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+ 
+
 }
 
 @media screen and (min-width: 1240px) {
@@ -388,22 +442,21 @@
     margin: 0 auto;
   }
 
-  .advantagesContainer {
+  .featuresContainer {
     row-gap: 77px;
   }
 
-  .testimonial {
-    font-size: 14px;
-    line-height: 24px;
-  }
+  
 
-  .testimonialsContainer__card {
+  .teamContainer__card {
     height: 240px;
     padding: 44px 25px 22px;
   }
 
   .infoContainer {
+    /* padding: 0 70px 293px; */
     flex-direction: row;
+    padding-bottom: 167px;
   }
 
   .bgCurvy {
@@ -411,13 +464,7 @@
     height: 580px;
   }
 
-  .infoContainer {
-    padding-bottom: 167px;
-  }
-
-  .testimonialsContainer {
-    padding-bottom: 367px;
-  }
+ 
 
   .textFooter {
     flex-direction: row;
@@ -438,7 +485,7 @@
     font-size: 16px;
   }
 
-  .infoContainer__text h2{
+  .infoContainer__text h2 {
     font-size: 35px;
   }
 }

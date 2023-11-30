@@ -23,9 +23,9 @@ export default function Home() {
             height={52}
           />
           <ul className={`${raleway.variable} ${styles.navUl}`}>
-            <li className={styles.navLi}><a href="#">Features</a></li>
-            <li className={styles.navLi}><a href="#">Team</a></li>
-            <li className={styles.navLi}><a href="#">Sign In </a></li>
+            <li className={styles.navLi}><a href="#features">Features</a></li>
+            <li className={styles.navLi}><a href="#team">Team</a></li>
+            <li className={styles.navLi}><a href="#sigin">Sign In </a></li>
           </ul>
         </nav>
 
@@ -34,8 +34,8 @@ export default function Home() {
             className={styles.imageIntro}
             src="/images/illustration-intro.png"
             alt="Illustration intro"
-            width={612}
-            height={455}
+            width={306}
+            height={227}
           />
           <div className={` ${raleway.variable} ${styles.getStartedContainer__text}`}>
             <h1 className={styles.h1}> All your files in one secure location, accessible anywhere.</h1>
@@ -48,8 +48,8 @@ export default function Home() {
         </section>
 
         <div className={styles.getStartedContainer__blue}>
-          <section className={styles.advantagesContainer}>
-            <div className={`${styles.advantagesContainer__item} ${raleway.variable}`}>
+          <section className={styles.featuresContainer} id='features'>
+            <div className={`${styles.featuresContainer__item} ${raleway.variable}`}>
               <Image
                 src="/images/icon-access-anywhere.svg"
                 alt="icon access anywhere"
@@ -57,12 +57,12 @@ export default function Home() {
                 height={141}
                 className={styles.accessIcon}
               />
-              <div className={styles.advantagesContainer__item__text}>
-                <h2 className={styles.h2}>Access your files, anywhere</h2>
+              <div className={styles.featuresContainer__item__text}>
+                <h2  className={styles.h2}>Access your files, anywhere</h2>
                 <p className={styles.text}>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
               </div>
             </div>
-            <div className={`${styles.advantagesContainer__item} ${raleway.variable}`}>
+            <div className={`${styles.featuresContainer__item} ${raleway.variable}`}>
               <Image
                 src="/images/icon-security.svg"
                 alt="icon-security"
@@ -70,12 +70,12 @@ export default function Home() {
                 height={141}
                 className={styles.securityIcon}
               />
-              <div className={styles.advantagesContainer__item__text}>
+              <div className={styles.featuresContainer__item__text}>
                 <h2 className={styles.h2}>Security you can trust</h2>
                 <p className={styles.text}>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
               </div>
             </div>
-            <div className={`${styles.advantagesContainer__item} ${raleway.variable}`}>
+            <div className={`${styles.featuresContainer__item} ${raleway.variable}`}>
               <Image
                 src="/images/icon-collaboration.svg"
                 alt="icon collaboration"
@@ -83,12 +83,12 @@ export default function Home() {
                 height={117}
                 className={styles.collabIcon}
               />
-              <div className={styles.advantagesContainer__item__text}>
+              <div className={styles.featuresContainer__item__text}>
                 <h2 className={styles.h2}>Real-time collaboration</h2>
                 <p className={styles.text}>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required</p>
               </div>
             </div>
-            <div className={`${styles.advantagesContainer__item} ${raleway.variable}`}>
+            <div className={`${styles.featuresContainer__item} ${raleway.variable}`}>
               <Image
                 src="/images/icon-any-file.svg"
                 alt="icon any file"
@@ -96,19 +96,19 @@ export default function Home() {
                 height={113}
                 className={styles.fileIcon}
               />
-              <div className={styles.advantagesContainer__item__text}>
+              <div className={styles.featuresContainer__item__text}>
                 <h2 className={styles.h2}>Store any type of file</h2>
                 <p className={styles.text}>Whether you&apos;re sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
               </div>
             </div>
           </section>
-          <section className={styles.infoContainer}>
+          <section className={styles.infoContainer} >
             <Image
               className={styles.infoContainer__image}
               src="/images/illustration-stay-productive.png"
               alt="illustration stay productive"
-              width={620}
-              height={467}
+              width={310}
+              height={233}
             />
             <div className={` ${styles.infoContainer__text}`}>
               <h2 className={styles.h2}>Stay productive, wherever you are</h2>
@@ -124,8 +124,8 @@ export default function Home() {
               </span>
             </div>
           </section>
-          <section className={styles.testimonialsContainer}>
-            <div className={styles.testimonialsContainer__card}>
+          <section className={styles.teamContainer} id='team'>
+            <div className={styles.teamContainer__card}>
               <Image
                 className={styles.quouteIcon}
                 src="/images/bg-quotes.png"
@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={styles.testimonialsContainer__card}>
+            <div className={styles.teamContainer__card}>
               <p className={`${styles.testimonial} ${raleway.variable}`}>
                 Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.            </p>
               <div className={styles.testimonialInfo}>
@@ -167,7 +167,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={styles.testimonialsContainer__card}>
+            <div className={styles.teamContainer__card}>
               <p className={`${styles.testimonial} ${raleway.variable}`}>
                 Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.            </p>
               <div className={styles.testimonialInfo}>
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
 
         <footer>
-          <div className={styles.suscribeContainer}>
+          <div className={styles.suscribeContainer} id='sigin'>
             <h2 className={styles.h2}>Get early access today</h2>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             <div className={styles.suscribe}>

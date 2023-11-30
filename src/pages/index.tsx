@@ -37,7 +37,7 @@ export default function Home() {
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
       <main role='main' className={`${styles.main} ${open_sans.variable}`}>
-        <nav >
+        <nav className={styles.nav}>
           <Image
             src="/images/logo.svg"
             alt="Fylo logo"
@@ -214,7 +214,6 @@ export default function Home() {
           <div className={styles.suscribeContainer} id='sigin'>
             <h2 className={styles.h2}>Get early access today</h2>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-
             <form noValidate onSubmit={handleSubmit}>
               <div className={styles.suscribe}>
                 <div className={styles.inputGroup}>

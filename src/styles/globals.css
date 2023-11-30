@@ -38,8 +38,8 @@ li {
 
 nav{
   display: flex;
-  justify-content: space-between;
   padding: 47px 40px  91px;
+
 }
 
 button{

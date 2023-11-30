@@ -1,11 +1,17 @@
 .main {
   font-family: var(--font-opensans);
 }
+
 .navUl {
   display: flex;
   width: 300px;
   justify-content: space-between;
   align-items: center;
+}
+
+.inputGroup{
+  display: flex;
+  flex-direction: column;
 }
 
 .navLi,
@@ -365,8 +371,11 @@
   }
 
   .suscribe input {
-    flex: 2;
     padding: 19px 37px 16px;
+  }
+
+  .inputGroup {
+    flex: 2;
   }
 
   .text {

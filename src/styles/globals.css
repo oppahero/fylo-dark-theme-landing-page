@@ -82,3 +82,9 @@ button:hover{
   filter: opacity(.5);
   -webkit-filter: opacity(.5);
 }
+
+.errorMessage{
+  color: var(--light-red);
+  margin-top: 5px;
+  font-size: 12px;
+}

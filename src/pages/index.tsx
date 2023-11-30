@@ -1,11 +1,33 @@
+"use client";
+
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { raleway, open_sans } from '../fonts'
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight, faEnvelope, faLocationDot, faPhoneVolume, faUser } from "@fortawesome/free-solid-svg-icons";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+
+const FormSchema = Yup.object({
+  email: Yup.string()
+    .email("Please enter a valid email address")
+    .required("Please provide an email")
+});
 
 export default function Home() {
+
+  const { handleSubmit, errors, touched, getFieldProps } = useFormik({
+    initialValues: {
+      email: ""
+    },
+    validationSchema: FormSchema,
+    onSubmit: (values) => {
+      console.log("en console:", values);
+    },
+  });
+
+
   return (
     <>
       <Head>
@@ -36,6 +58,7 @@ export default function Home() {
             alt="Illustration intro"
             width={306}
             height={227}
+            priority={true}
           />
           <div className={` ${raleway.variable} ${styles.getStartedContainer__text}`}>
             <h1 className={styles.h1}> All your files in one secure location, accessible anywhere.</h1>
@@ -58,7 +81,7 @@ export default function Home() {
                 className={styles.accessIcon}
               />
               <div className={styles.featuresContainer__item__text}>
-                <h2  className={styles.h2}>Access your files, anywhere</h2>
+                <h2 className={styles.h2}>Access your files, anywhere</h2>
                 <p className={styles.text}>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
               </div>
             </div>
@@ -191,10 +214,20 @@ export default function Home() {
           <div className={styles.suscribeContainer} id='sigin'>
             <h2 className={styles.h2}>Get early access today</h2>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-            <div className={styles.suscribe}>
-              <input type="email" name="email" id="email" placeholder='email@example.com' />
-              <button className={styles.suscribeButton} >Get Started for free</button>
-            </div>
+
+            <form noValidate onSubmit={handleSubmit}>
+              <div className={styles.suscribe}>
+                <div className={styles.inputGroup}>
+                  <input type="email" id="email" placeholder='email@example.com' {...getFieldProps("email")}
+                    className={`${touched.email && errors.email}`}
+                  />
+                  {touched.email && errors.email && (
+                    <span className="errorMessage">{errors.email}</span>
+                  )}
+                </div>
+                <button type="submit" className={styles.suscribeButton} >Get Started for free</button>
+              </div>
+            </form>
           </div>
 
           <div className={styles.footerContainer}>

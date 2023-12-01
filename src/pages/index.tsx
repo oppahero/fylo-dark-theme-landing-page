@@ -70,7 +70,7 @@ export default function Home() {
 
         </section>
 
-        <div className={styles.getStartedContainer__blue}>
+        <div className={styles.blueContainer}>
           <section className={styles.featuresContainer} id='features'>
             <div className={`${styles.featuresContainer__item} ${raleway.variable}`}>
               <Image
@@ -202,7 +202,7 @@ export default function Home() {
                   height={50}
                 />
                 <div className={styles.testimonialPerson}>
-                  <h3 className={styles.testimonialName}>Iva Boyd</h3>
+                  <h3>Iva Boyd</h3>
                   <p>Founder & CEO, Huddle</p>
                 </div>
               </div>

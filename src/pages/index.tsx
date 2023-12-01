@@ -259,15 +259,19 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.infoLinks}>
-                <li><a>About Us</a></li>
-                <li><a>Jobs</a></li>
-                <li><a>Press</a></li>
-                <li><a>Blog</a></li>
+                <ul>
+                  <li><a>About Us</a></li>
+                  <li><a>Jobs</a></li>
+                  <li><a>Press</a></li>
+                  <li><a>Blog</a></li>
+                </ul>
               </div>
               <div className={styles.infoLinks}>
-                <li><a>Contact Us</a></li>
-                <li><a>Terms</a></li>
-                <li><a>Privacy</a></li>
+                <ul>
+                  <li><a>Contact Us</a></li>
+                  <li><a>Terms</a></li>
+                  <li><a>Privacy</a></li>
+                </ul>
               </div>
               <div className={styles.socialMedia}>
                 {/* <FontAwesomeIcon icon={faFacebook} />

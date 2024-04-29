@@ -1,6 +1,6 @@
-# Frontend Mentor - Fylo dark theme landing page solution
+# Fylo dark theme landing page 
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). 
+This is my solution to the Fylo dark theme landing page challenge on Frontend Mentor
 
 ## Table of contents
 
@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/oppahero/fylo-dark-theme-landing-page](https://github.com/oppahero/fylo-dark-theme-landing-page)
-- Live Site URL: [https://fylo-dark-theme-landing-page-lac.vercel.app/](https://fylo-dark-theme-landing-page-lac.vercel.app/)
+- Solution URL: [Fylo landing page using Next react CSS](https://www.frontendmentor.io/solutions/fylo-landing-page-using-next-react-css-8YCMbX5ejR)
+- Live Site URL: [Demo/](https://fylo-dark-theme-landing-page-lac.vercel.app/)
 
 ## My process
 
